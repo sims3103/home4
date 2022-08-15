@@ -9,7 +9,6 @@
   height: 450px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 .text1{
@@ -76,7 +75,7 @@ margin-top: 20px;
   align-items: center;
   width: 100%;
   height: 580px;
-  background-color: rgb(42, 42, 42);
+  background-color: #333;
   
 }
 
@@ -143,14 +142,14 @@ img{
   
   height: 300px;
   width: 50%;
-  background-color: rgb(0, 159, 159);
+  background-color: #2690d4;
 }
 
 .article2{
   
   height: 300px;
   width: 50%;
-  background-color: rgb(64, 64, 64);
+  background-color: #333;
 }
 
 .about1{
@@ -194,6 +193,6 @@ img{
 }
 
 span{
-  color: rgb(0, 159, 159);
+  color: #2690d4;
 }
 
