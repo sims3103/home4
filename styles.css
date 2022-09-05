@@ -1,21 +1,36 @@
-
-
-#heading{
+.header{
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(img/photo1.png);
-  height: 450px;
+  min-height: 450px;
+  padding: 20px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.text1{
+.header::before {
+content: '';
+position: absolute;
+background-image: url(img/photo1.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: -1;
+opacity: 0.9;
+}
+
+
+.main-heading{
   font-size: 40px;
   font-weight: bold;
 }
-.text2{
+.header-text{
 padding-top: 15px;
 font-size: 20px;
 text-align: center;
@@ -23,26 +38,18 @@ max-width: 950px;
 margin-top: 20px;
 }
 
-.text3{
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin: 30px;
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
- .text4{
+.sub-header{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
 
 .button{
+  display: inline-block;
   font-size: 18px;
   background-color: rgb(46, 45, 45);
   color: white;
@@ -52,10 +59,8 @@ margin-top: 20px;
   text-decoration-line: none;
 }
 .button:hover{
-  padding: 14px;
   background-color: white;
   color: black;
-  text-align: center;
 }
 
 .box1{
@@ -65,7 +70,7 @@ margin-top: 20px;
   align-items: center;
   background-color: white;
   color:black;
-  height: 250px;
+  padding: 20px;
 }
 
 .box2{
@@ -73,56 +78,30 @@ margin-top: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 580px;
   background-color: #333;
-  
+  padding: 20px;
 }
-
-.section1,
-.section2,
-.section3{
+ .card-container {
+  padding: 20px;
+ }
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-self: center;
-  margin: auto;
-  height: 500px;
+  margin: 15px 10px;
   width: 300px;
   background-color: white;
   
 }
 
- .section1{
-  position: relative;
-  left: 130px;
- }
-
- .section3{
-  position: relative;
-  right: 130px;
- }
-
-img{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+img {
+  display: block;
   width: 100%;
-  margin-top: -10px;}
-
-.box3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color:black;
-  height: 220px;
 }
 
-.lorem{
+
+.info-text{
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -133,50 +112,37 @@ img{
 }
 .box4{
   display: flex;
-  height: 300px;
-  width: 100%;
   color: white;
 }
 
+.article1,
+.article2 {
+  padding: 40px 20px;
+  text-align: center;
+}
 .article1{
-  
-  height: 300px;
   width: 50%;
   background-color: #2690d4;
 }
 
 .article2{
-  
-  height: 300px;
   width: 50%;
   background-color: #333;
 }
 
 .about1{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   font-size: 30px;
-  margin-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .about2{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
   margin-top: 20px;
-  text-align: center;
-  padding: 30px;
 }
 
 .about3{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: inline-block;
   font-size: 20px;
-  margin-top: 25px;
+  margin: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -184,15 +150,14 @@ img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
-  width: 100%;
+  padding: 30px 10px;
   background-color: black;
   color: white;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-span{
+.media{
   color: #2690d4;
 }
 
